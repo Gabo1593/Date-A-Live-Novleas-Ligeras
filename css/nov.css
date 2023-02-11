@@ -76,7 +76,7 @@ aside{
     position: relative;
     width: 100%;
     height: 100%;
-    background: rgba(207, 10, 200, 0.567);
+    background: rgb(207 10 200 / 77%);
     text-align: center;
     flex-direction: column;
     border-radius: 15px;
@@ -105,6 +105,7 @@ aside .aside--container img{
 .aside--container p{
     padding: 0;
     margin: 2px;
+    font-size: 1.3rem;
 } 
 .aside--container a{
     margin: 0 0 2px 0;

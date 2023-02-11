@@ -16,6 +16,8 @@ let vol7
 let vol9
 let vol16
 let vol17
+let vol19
+let vol22
 let volumenes = []
 
 class DetalleVolumenes {
@@ -35,8 +37,10 @@ let volumen7 = new DetalleVolumenes("./imagenes/DAL-V-7.jpg", "Date A Live - Vol
 let volumen9 = new DetalleVolumenes("./imagenes/DAL-V-9.jpg", "Date A Live - Volumen 9", "volumen_9")
 let volumen16 = new DetalleVolumenes("./imagenes/DAL-V-16.jpg", "Date A Live - Volumen 16", "volumen_16")
 let volumen17 = new DetalleVolumenes("./imagenes/DAL-V-17.jpg", "Date A Live - Volumen 17", "volumen_17")
+let volumen19 = new DetalleVolumenes("./imagenes/DAL-V-19.jpg", "Date A Live - Volumen 19", "volumen_19")
+let volumen22 = new DetalleVolumenes("./imagenes/DAL-V-22.png", "Date A Live - Volumen 22", "volumen_22")
 
-    volumenes.push(volumen1, volumen2, volumen3, volumen4, volumen5, volumen6, volumen7, volumen9, volumen16, volumen17)
+    volumenes.push(volumen1, volumen2, volumen3, volumen4, volumen5, volumen6, volumen7, volumen9, volumen16, volumen17, volumen19, volumen22)
 
 
    
@@ -62,6 +66,8 @@ let volumen17 = new DetalleVolumenes("./imagenes/DAL-V-17.jpg", "Date A Live - V
      vol9 = document.getElementById("volumen_9")
      vol16 = document.getElementById("volumen_16")
      vol17 = document.getElementById("volumen_17")
+     vol19 = document.getElementById("volumen_19")
+     vol22 = document.getElementById("volumen_22")
     })
 
     function elegirNovela(){
@@ -105,6 +111,14 @@ let volumen17 = new DetalleVolumenes("./imagenes/DAL-V-17.jpg", "Date A Live - V
         else if(vol17.checked){
             imgDelVolumenAside.src ="./imagenes/DAL-V-17.jpg"
             volumenDelAside.innerHTML = "Volumen 17"
+        }
+        else if(vol19.checked){
+            imgDelVolumenAside.src ="./imagenes/DAL-V-19.jpg"
+            volumenDelAside.innerHTML = "Volumen 19"
+        }
+        else if(vol22.checked){
+            imgDelVolumenAside.src ="./imagenes/DAL-V-22.png"
+            volumenDelAside.innerHTML = "Volumen 22"
         }
     }
     
