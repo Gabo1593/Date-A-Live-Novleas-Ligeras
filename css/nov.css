@@ -70,6 +70,7 @@ aside{
     position:fixed;
     width: 40%;
     height: 90vh;
+    z-index: 1;
 }
 .aside--container{
     display: flex;
